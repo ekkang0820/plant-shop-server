@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #c3f5d1; /* 배경색 조정 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .signup-container {
+        background-color: #fff; /* 로그인 박스 배경색 */
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        width: 300px;
+      }
+      .signup-container h2 {
+        text-align: center;
+        margin: 0 0 20px;
+      }
+      .form-group {
+        margin-bottom: 20px;
+      }
+      .form-group input {
+        width: calc(100% - 20px); /* 좌우 패딩을 고려하여 너비 조정 */
+        padding: 10px;
+        margin: 0 auto; /* 자동 마진을 이용한 중앙 정렬 */
+        display: block; /* 블록 레벨 요소로 만들어줌 */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      .form-group button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #34db82; /* 버튼 배경색 */
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form-group button:hover {
+        background-color: #00975b;
+      }
+      .signup-container a {
+        text-decoration: none;
+        color: #3498db;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .form-group {
+        display: flex; /* 플렉스박스 모델 적용 */
+        justify-content: space-between; /* 내용물 사이의 간격을 균일하게 설정 */
+      }
+      .form-group input[type="email"],
+      .form-group button.check-email {
+        flex-grow: 1; /* 플렉스 아이템이 컨테이너 내에서 확장될 수 있도록 설정 */
+      }
+      .form-group input[type="email"] {
+        /* 이메일 인풋 필드 오른쪽 여백 추가 */
+        margin-right: 10px; /* 버튼과의 간격 */
+      }
+      .form-group button.check-email {
+        /* 중복확인 버튼 스타일 */
+        padding: 10px;
+        margin-left: 10px; /* 인풋 필드와의 간격 */
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        white-space: nowrap; /* 버튼 텍스트 줄바꿈 방지 */
+      }
+      .form-group button.check-email:hover {
+        background-color: #2980b9;
+      }
+    </style>
+  </head>
+  <div class="signup-container">
+    <h2>Signup</h2>
+    <div class="form-group">
+      <input type="email" placeholder="Email" />
+      <button class="check-email">Check Email</button>
+    </div>
+    <div class="form-group">
+      <input type="password" placeholder="Password" />
+    </div>
+    <div class="form-group">
+      <input type="text" placeholder="Name" />
+    </div>
+    <div class="form-group">
+      <input type="text" placeholder="Address" />
+    </div>
+    <div class="form-group">
+      <input type="date" placeholder="Birthdate" />
+    </div>
+    <div class="form-group">
+      <button>Signup</button>
+    </div>
+    <a href="#">Already a member? Login</a>
+  </div>
+  </body>
+</html>

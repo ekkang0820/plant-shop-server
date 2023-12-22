@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #b4ebb0; /* 배경색 조정 필요 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      .login-container {
+        background-color: #fff; /* 로그인 박스 배경색 */
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        width: 300px;
+      }
+      .login-container h2 {
+        text-align: center;
+        margin: 0 0 20px;
+      }
+      .form-group {
+        margin-bottom: 20px;
+        align-content: center;
+        text-align: left;
+      }
+      .form-group input {
+        margin: 0 auto;
+        width: 90%;
+        padding-left: 30px;
+        height: 30px;
+
+        border: 1px solid #ccc; /* 테두리 색상 */
+        border-radius: 5px;
+      }
+      .form-group button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #3498db; /* 버튼 배경색 */
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .form-group button:hover {
+        background-color: #2980b9;
+      }
+      .login-container a {
+        text-decoration: none;
+        color: #3498db;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>Login</h2>
+      <div class="form-group">
+        <input type="text" placeholder="Username" />
+      </div>
+      <div class="form-group">
+        <input type="password" placeholder="Password" />
+      </div>
+      <div class="form-group">
+        <button>Login</button>
+      </div>
+      <a href="#">Forgot Password?</a>
+      <a href="#">Not a member? Signup</a>
+    </div>
+  </body>
+</html>
